@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color:hsl(30, 38%, 92%) ;
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+
+}
+.card{
+    max-width: 700px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+.image img{
+    max-width: 100%;
+    display:block;
+}
+.card-content{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* row-gap: 45px; */
+}
+h6.pro-fst{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color:hsl(228, 12%, 48%) ;
+    font-weight: 500;
+}
+h2.pro-name {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color:hsl(212, 21%, 14%) ;
+}
+p.pro-des{
+    color:hsl(228, 12%, 48%) ;
+    line-height: 1.6em;
+
+}
+.price{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    
+}
+p.current-price{
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%) ;
+    font-size: 25px;
+    /* padding-right: 25px; */
+}
+p.old-price{
+    color:hsl(228, 12%, 48%) ;
+    text-decoration: line-through;
+}
+button{
+    background-color: hsl(158, 36%, 37%) ;
+    border: none;
+    padding: 14px 0;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(158, 36%, 23%) ;
+}
+button img{
+    padding-right: 10px;
+}
+
+@media only screen and (max-width:652px){
+    .card{
+        grid-template-columns: 1fr;
+    }
+    image.img{
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
