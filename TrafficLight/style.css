@@ -1,0 +1,25 @@
+.head {
+    height: 200px;
+    width: 70px;
+    border: 1px solid black;
+      
+}
+
+.light {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px;
+
+}
+ #red {
+    background-color: red;
+
+ }
+ #yellow {
+    background-color: yellow;
+ }
+ #green {
+    background-color: green;
+ }
